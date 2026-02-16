@@ -1,0 +1,146 @@
+*{
+    font-family: Inter Tight;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.header{
+    position:fixed;
+    width: 100%;
+    max-width: 726px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vh;
+    z-index: 1;
+}
+
+.content{
+    width: 100%;
+    max-width: 726px;
+    padding: 20px;
+    padding-top: 10vh;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap:1vh;
+}
+
+/*buttons*/
+.ghost-button{
+    background-color: transparent;
+    border-radius: 1em;
+    border: none;
+    color:black;
+}
+
+.ghost-button:hover{
+    background-color: #ededed;
+    transition: all 200ms ease;
+}
+
+.ghot-button:active{
+    transform: scale(0.98);
+}
+
+
+.project-button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.project-button:hover{
+    background-color: #33333333;
+    transition: all 200ms ease; 
+}
+
+.pill{
+    display:block;
+    min-width: 80px;
+    border-color: transparent;
+    border-radius: 2em;
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-weight: 500;
+}
+
+.pill:hover{
+    border-color:black;
+    background-color: white;
+    color:black;
+    transition: all 200ms ease;
+}
+
+.eyebutton{
+    display:block;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    width: 2vh;
+    height: 1vh;
+    padding: 10px;
+}
+
+
+/*text*/
+
+h1{
+    font-size: 45px;
+    margin-bottom: 27px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-size:16px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    font-style:normal;
+}
+
+a{
+    color: #333333;
+}
+
+
+/*images*/
+
+
+.img-button{
+    width: 100%;
+    height: auto;
+    transition: all 200ms ease;
+    z-index: -1;
+}
+
+.img-button:hover{
+    transform: scale(0.99);
+    transition: all 200ms ease;
+    z-index: -1;
+}
+
+.img-button:active{
+    transform: scale(0.98);
+    transition: all 200ms ease;
+}
+
+.content img{
+    width: 100%;
+    height: auto;
+}
